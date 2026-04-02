@@ -32,19 +32,19 @@ The platform is aligned with Saudi Arabia's **Vision 2030** tourism goals, helpi
 ## 🖥️ Screenshots
 
 ### Destinations — Search & Discovery
-![Destinations](docs/screenshots/destinations_search.png)
+![Destinations](docs/screenshots/destinations_search.jpg)
 
 ### Admin Dashboard
-![Dashboard](docs/screenshots/admin_dashboard.png)
+![Dashboard](docs/screenshots/admin_dashboard.jpg)
 
 ### Admin — Edit Modal
-![Edit Modal](docs/screenshots/edit_modal.png)
+![Edit Modal](docs/screenshots/edit_modal.jpg)
 
 ### User Profile — Favorites
-![Favorites](docs/screenshots/favorites.png)
+![Favorites](docs/screenshots/favorites_profile.jpg)
 
 ### User Profile — Management
-![Profile](docs/screenshots/profile.png)
+![Profile](docs/screenshots/profile_page.jpg)
 
 ---
 
@@ -125,7 +125,7 @@ hala-saudi/
 │       │   ├── SearchAll/
 │       │   └── SignIn / SignUp / ResetPassword
 │       ├── components/
-│       │   ├── ItineraryPlanner/     # Multi-step form
+│       │   ├── ItineraryPlanner/
 │       │   ├── Rating/
 │       │   ├── LikeButton/
 │       │   ├── FilterPanel/
@@ -152,8 +152,6 @@ hala-saudi/
 ---
 
 ## 🤖 AI Itinerary Generator — Core Feature
-
-The 6-step wizard is the most technically complex feature I built:
 
 ```
 Destination → Duration → Interests → Budget → Travelers → Food Preferences
@@ -200,26 +198,23 @@ await Itinerary.create({ user: userId, ...itinerary });
 ## 📐 System Design Diagrams
 
 ### Class Diagram
-![Class Diagram](docs/diagrams/class_diagram.png)
+![Class Diagram](docs/diagrams/class_diagram.jpg)
 
 ### User Journey Sequence
-![User Journey](docs/diagrams/user_journey.png)
+![User Journey](docs/diagrams/user_journey_sequence.jpg)
 
 ### Admin Operations Sequence
-![Admin Sequence](docs/diagrams/admin_sequence.png)
+![Admin Sequence](docs/diagrams/admin_operations_sequence.jpg)
 
 ### ER Diagram
-![ER Diagram](docs/diagrams/er_diagram.png)
+![ER Diagram](docs/diagrams/er_diagram.jpg)
 
 ---
 
 ## 🧪 Testing
 
 ```bash
-# Backend with coverage
 cd backend && npm run test:coverage
-
-# Frontend with coverage
 cd frontend && npm run test:coverage
 ```
 
@@ -241,21 +236,12 @@ cd frontend && npm run test:coverage
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js v14+
-- MongoDB (local or Atlas)
-- OpenAI API key
-
-### Installation
-
 ```bash
-git clone https://github.com/YOUR_USERNAME/hala-saudi.git
-cd hala-saudi
+git clone https://github.com/Ziyadalshrani507/UNI-Senior-Project-HalaSaudi.git
+cd UNI-Senior-Project-HalaSaudi
 cd backend && npm install
 cd ../frontend && npm install
 ```
-
-### Environment Variables
 
 `backend/.env`:
 ```env
@@ -273,25 +259,10 @@ EMAIL_PASS=your_email_password
 VITE_API_URL=http://localhost:5000
 ```
 
-### Run
-
 ```bash
-cd backend && npm run dev    # Terminal 1
-cd frontend && npm run dev   # Terminal 2
+cd backend && npm run dev
+cd frontend && npm run dev
 ```
-
-App → `http://localhost:5173`
-
----
-
-## 📊 Performance Targets
-
-| Metric | Target |
-|--------|--------|
-| API response time | < 500ms |
-| Search / filter results | < 300ms (with debounce) |
-| AI itinerary generation | < 2 seconds |
-| System uptime | 99.9% |
 
 ---
 
