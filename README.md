@@ -1,8 +1,8 @@
-# 🇸🇦 Hala Saudi — AI-Powered Tourism Platform
+# Hala Saudi - AI-Powered Tourism Platform
 
 <div align="center">
 
-**An intelligent, full-stack travel planning platform for Saudi Arabia**
+**A full-stack travel planning platform for Saudi Arabia**
 built with React, Node.js, MongoDB, and OpenAI
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://reactjs.org/)
@@ -12,78 +12,65 @@ built with React, Node.js, MongoDB, and OpenAI
 [![JWT](https://img.shields.io/badge/Auth-JWT-000000?logo=jsonwebtokens)](https://jwt.io/)
 
 **Developed by Ziyad Alshahrani**
-Prince Sultan University — Software Engineering Senior Project
+Prince Sultan University - Software Engineering Senior Project
 Supervised by Prof. Dr. Eng. Mohammed Akkour
 
 </div>
 
 ---
 
-## 👨‍💻 About Me & This Project
+## About This Project
 
-**Ziyad Alshahrani** | Full-Stack Developer
+Hala Saudi is a web application I built as my senior project at Prince Sultan University. The idea behind it is to help tourists plan their trips around Saudi Arabia in a smarter way. Instead of searching manually across different websites, users can come to one platform, discover destinations, hotels and restaurants, and let the AI generate a full personalized itinerary for them based on their preferences.
 
-I built **Hala Saudi** as my Software Engineering senior project at Prince Sultan University. I was responsible for the full-stack implementation — database schema design, REST API architecture, React frontend, AI itinerary generation engine, authentication system, admin dashboard, testing suite, and deployment configuration.
-
-The platform is aligned with Saudi Arabia's **Vision 2030** tourism goals, helping tourists discover destinations, hotels, and restaurants across the Kingdom and generate personalized multi-day travel itineraries powered by AI.
+The project is built full-stack, and I handled everything from the database design and backend API to the frontend UI and the AI integration. It took 4 sprints over a full academic semester to complete.
 
 ---
 
-## 🖥️ Screenshots
+## What the Platform Does
 
-### Destinations — Search & Discovery
-![Destinations](docs/screenshots/destinations_search.jpg)
+The core feature is the AI itinerary generator. A user fills in a 6-step form telling the system where they want to go, how long they are staying, what their interests are, their budget, who they are travelling with, and their food preferences. The backend then pulls relevant places from the database, builds a structured prompt, sends it to OpenAI, and gets back a complete day-by-day plan with a hotel recommendation and morning, lunch, afternoon, and dinner suggestions for each day.
 
-### Admin Dashboard
-![Dashboard](docs/screenshots/admin_dashboard.jpg)
-
-### Admin — Edit Modal
-![Edit Modal](docs/screenshots/edit_modal.jpg)
-
-### User Profile — Favorites
-![Favorites](docs/screenshots/favorites_profile.jpg)
-
-### User Profile — Management
-![Profile](docs/screenshots/profile_page.jpg)
+Beyond the itinerary feature, the platform lets users browse and filter destinations, hotels and restaurants, like and save their favourites, leave ratings and reviews, search across everything from one search bar, and manage their profile with a photo upload. There is also a full admin dashboard where administrators can add, edit and delete any listing in the system.
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 AI Itinerary Generator | Personalized day-by-day plans via OpenAI based on 6 user inputs |
-| 🗺️ Destination Discovery | Filter by city, category, price, rating with interactive Leaflet maps |
-| 🏨 Hotels | Search by price range, amenities, and hotel class |
-| 🍽️ Restaurants | Filter by cuisine, category, opening hours, and price range |
-| ⭐ Ratings & Reviews | Star ratings with score breakdown for all listing types |
-| ❤️ Likes / Favorites | Save and manage favorites across all listing types per user |
-| 🔍 Global Search | Case-insensitive debounced search across all content |
-| 🔐 Auth System | JWT + HTTP-only cookies, email verification, password reset |
-| 👤 User Profiles | Photo upload, favorites tab, review history |
-| 🛡️ Admin Dashboard | Full CRUD, stats cards, reusable modal, role-based access |
-| 🔔 Notifications | Real-time toast notifications via react-toastify |
-| 🧪 Test Suite | Unit, integration, and black-box tests for backend & frontend |
+| 🤖 AI Itinerary Generator | Personalized day-by-day travel plans powered by OpenAI |
+| 🗺️ Destination Discovery | Browse and filter Saudi destinations with interactive maps |
+| 🏨 Hotels | Search by price range, amenities and hotel class |
+| 🍽️ Restaurants | Filter by cuisine, category and price range |
+| ⭐ Ratings and Reviews | Star ratings with score breakdown for all listings |
+| ❤️ Likes and Favorites | Save and manage favourites across all listing types |
+| 🔍 Global Search | Search across all content from one search bar |
+| 🔐 Auth System | JWT with HTTP-only cookies, email verification and password reset |
+| 👤 User Profiles | Photo upload, favourites tab and review history |
+| 🛡️ Admin Dashboard | Full CRUD management with stats and role-based access |
+| 🔔 Notifications | Real-time toast notifications for user actions |
+| 🧪 Test Suite | Unit, integration and black-box tests across the whole app |
 
 ---
 
-## 🗓️ Built Across 4 Agile Sprints
+## Built Across 4 Sprints
 
-| Sprint | Key Deliverables |
-|--------|-----------------|
-| **Sprint 1** | System architecture, MVC design, database schema, security requirements |
-| **Sprint 2** | Admin dashboard, CRUD for destinations/hotels/restaurants, filtering & sorting |
-| **Sprint 3** | Ratings & reviews, likes/favorites, global search, real-time notifications |
-| **Sprint 4** | User profile management, search optimization, end-to-end testing, deployment |
+| Sprint | What Was Delivered |
+|--------|--------------------|
+| Sprint 1 | System architecture, MVC design, database schema, security requirements |
+| Sprint 2 | Admin dashboard, CRUD for destinations, hotels and restaurants, filtering and sorting |
+| Sprint 3 | Ratings and reviews, likes and favourites, global search, real-time notifications |
+| Sprint 4 | User profile management, search optimization, end-to-end testing, deployment |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 | Technology | Purpose |
 |-----------|---------|
-| React 18 + Vite | SPA framework & build tool |
+| React 18 + Vite | SPA framework and build tool |
 | React Router v6 | Client-side routing |
 | Framer Motion | UI animations |
 | Leaflet / React-Leaflet | Interactive maps |
@@ -95,19 +82,19 @@ The platform is aligned with Saudi Arabia's **Vision 2030** tourism goals, helpi
 ### Backend
 | Technology | Purpose |
 |-----------|---------|
-| Node.js + Express.js | REST API server (MVC pattern) |
-| MongoDB + Mongoose | NoSQL database & ODM |
-| JWT + bcryptjs | Auth & password hashing (salt factor 10) |
+| Node.js + Express.js | REST API server using MVC pattern |
+| MongoDB + Mongoose | NoSQL database and ODM |
+| JWT + bcryptjs | Authentication and password hashing |
 | OpenAI API | AI itinerary generation |
-| Multer | File/image uploads |
-| Nodemailer | Email (reset & verification) |
+| Multer | File and image uploads |
+| Nodemailer | Email for password reset and verification |
 | express-rate-limit | API rate limiting |
 | xss | Input sanitization |
 | Jest + Supertest + mongodb-memory-server | Backend testing |
 
 ---
 
-## 🏗️ Project Architecture
+## Project Structure
 
 ```
 hala-saudi/
@@ -118,8 +105,8 @@ hala-saudi/
 │       │   ├── Destinations/
 │       │   ├── Hotels/
 │       │   ├── Restaurants/
-│       │   ├── ItineraryPlanner/     # AI wizard (6-step form)
-│       │   ├── Dashboard/            # Admin CRUD + stats
+│       │   ├── ItineraryPlanner/     # AI wizard with 6-step form
+│       │   ├── Dashboard/            # Admin panel with CRUD and stats
 │       │   ├── Profile/
 │       │   ├── ItemDetails/
 │       │   ├── SearchAll/
@@ -134,7 +121,7 @@ hala-saudi/
 │
 └── backend/
     ├── Controllers/
-    │   ├── itineraryController.js    # OpenAI AI generation
+    │   ├── itineraryController.js    # AI generation with OpenAI
     │   ├── authController.js
     │   ├── destinationController.js
     │   ├── hotelController.js
@@ -151,11 +138,15 @@ hala-saudi/
 
 ---
 
-## 🤖 AI Itinerary Generator — Core Feature
+## How the AI Itinerary Works
+
+The user fills in a 6-step form:
 
 ```
-Destination → Duration → Interests → Budget → Travelers → Food Preferences
+Destination -> Duration -> Interests -> Budget -> Travelers -> Food Preferences
 ```
+
+Then the backend does this:
 
 ```js
 // itineraryController.js
@@ -176,65 +167,52 @@ const itinerary = JSON.parse(completion.data.choices[0].message.content);
 await Itinerary.create({ user: userId, ...itinerary });
 ```
 
-> The AI only recommends venues that exist in the database — no hallucinated places.
+The AI only picks from real places in the database, so there are no made-up venues in the results.
 
 ---
 
-## 🔐 Security Implementation
+## Security
 
-| Requirement | Implementation |
-|------------|---------------|
-| Authentication | JWT tokens, 24h expiry + refresh token mechanism |
-| Passwords | bcrypt salt factor 10, never stored in plaintext |
-| Token storage | HTTP-only cookies (not localStorage) |
-| CORS | Approved domains only; `Secure` + `SameSite` in production |
-| Authorization | Role-based: `user` and `admin` with dedicated middleware |
-| Input security | Client + server validation, XSS sanitization |
-| Password reset | Time-limited JWT (1h expiry) + email verification |
-| Rate limiting | express-rate-limit on auth and sensitive routes |
-
----
-
-## 📐 System Design Diagrams
-
-### Class Diagram
-![Class Diagram](docs/diagrams/class_diagram.jpg)
-
-### User Journey Sequence
-![User Journey](docs/diagrams/user_journey_sequence.jpg)
-
-### Admin Operations Sequence
-![Admin Sequence](docs/diagrams/admin_operations_sequence.jpg)
-
-### ER Diagram
-![ER Diagram](docs/diagrams/er_diagram.jpg)
+| What | How |
+|------|-----|
+| Authentication | JWT tokens with 24h expiry and a refresh token |
+| Passwords | bcrypt with salt factor 10, never stored in plaintext |
+| Token storage | HTTP-only cookies, not localStorage |
+| CORS | Approved domains only, Secure and SameSite set in production |
+| Authorization | Role-based with user and admin roles and middleware guards |
+| Input | Validated on both client and server, sanitized against XSS |
+| Password reset | Time-limited JWT valid for 1 hour with email verification |
+| Rate limiting | Applied on auth routes and other sensitive endpoints |
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
+# Backend tests with coverage
 cd backend && npm run test:coverage
+
+# Frontend tests with coverage
 cd frontend && npm run test:coverage
 ```
 
-| Test Area | Coverage |
-|-----------|---------|
-| `authController` | Login, register, token validation |
-| `destinationController` | CRUD, filtering, search |
-| `hotelController` | Listing, admin operations |
-| `restaurantController` | CRUD, search |
-| `likeController` | Like/unlike logic |
-| `itineraryController` | AI generation, retrieval |
-| `authMiddleware` | JWT verification, role guard |
-| `validationMiddleware` | XSS, sanitization |
+| Area | What is Tested |
+|------|---------------|
+| authController | Login, register, token validation |
+| destinationController | CRUD, filtering, search |
+| hotelController | Listing, admin operations |
+| restaurantController | CRUD, search |
+| likeController | Like and unlike logic |
+| itineraryController | AI generation and retrieval |
+| authMiddleware | JWT verification and role guard |
+| validationMiddleware | XSS and sanitization rules |
 | Frontend components | LikeButton, Rating, Auth flows |
 
-> All backend tests use **in-memory MongoDB** — production data is never touched.
+All backend tests run against an in-memory MongoDB instance so the real database is never touched.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/Ziyadalshrani507/UNI-Senior-Project-HalaSaudi.git
@@ -243,7 +221,7 @@ cd backend && npm install
 cd ../frontend && npm install
 ```
 
-`backend/.env`:
+Create a `backend/.env` file:
 ```env
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
@@ -254,19 +232,57 @@ EMAIL_USER=your_email
 EMAIL_PASS=your_email_password
 ```
 
-`frontend/.env`:
+Create a `frontend/.env` file:
 ```env
 VITE_API_URL=http://localhost:5000
 ```
 
+Then run:
 ```bash
 cd backend && npm run dev
 cd frontend && npm run dev
 ```
 
+The app will be available at `http://localhost:5173`
+
+---
+
+## System Design
+
+### Class Diagram
+![Class Diagram](docs/diagrams/class_diagram.jpg)
+
+### User Journey Sequence Diagram
+![User Journey](docs/diagrams/user_journey_sequence.jpg)
+
+### Admin Operations Sequence Diagram
+![Admin Sequence](docs/diagrams/admin_operations_sequence.jpg)
+
+### ER Diagram
+![ER Diagram](docs/diagrams/er_diagram.jpg)
+
+---
+
+## Screenshots
+
+### Destinations - Search and Discovery
+![Destinations](docs/screenshots/destinations_search.jpg)
+
+### Admin Dashboard
+![Dashboard](docs/screenshots/admin_dashboard.jpg)
+
+### Admin - Edit Modal
+![Edit Modal](docs/screenshots/edit_modal.jpg)
+
+### User Profile - Favorites
+![Favorites](docs/screenshots/favorites_profile.jpg)
+
+### User Profile - Management
+![Profile](docs/screenshots/profile_page.jpg)
+
 ---
 
 <div align="center">
-  <strong>Built by Ziyad Alshahrani</strong><br/>
-  Prince Sultan University · Software Engineering · Vision 2030
+  Built by Ziyad Alshahrani<br/>
+  Prince Sultan University - Software Engineering - Vision 2030
 </div>
