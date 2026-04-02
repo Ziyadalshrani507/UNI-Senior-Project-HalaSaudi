@@ -25,9 +25,9 @@ Supervised by Prof. Dr. Eng. Mohammed Akkour
 
 
 Hala Saudi is a web application I built as my senior project at Prince Sultan University. The idea behind it is to help tourists plan their trips around Saudi Arabia in a smarter way. Instead of searching manually across different websites, users can come to one platform, discover destinations, hotels and restaurants, and let the AI generate a full personalized itinerary for them based on their preferences.
+The project is built full-stack, and I handled everything from the database design and backend API to the frontend UI and the AI integration. It took 4 sprints over a full academic semester to complete.
 =======
 **Ziyad Alshahrani** | Software Engineer
->>>>>>> 5d9d7626721412dacf85f2170e5fac0b009e0f00
 
 The project is built full-stack, and I handled everything from the database design and backend API to the frontend UI and the AI integration. It took 4 sprints over a full academic semester to complete.
 
