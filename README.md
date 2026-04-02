@@ -1,4 +1,4 @@
-# 🇸🇦 Hala Saudi — AI-Powered Tourism Platform
+# Hala Saudi _  AI-Powered Tourism Platform
 
 <div align="center">
 
