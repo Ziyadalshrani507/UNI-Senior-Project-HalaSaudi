@@ -21,7 +21,7 @@ Supervised by Prof. Dr. Eng. Mohammed Akkour
 
 ## 👨‍💻 About Me & This Project
 
-**Ziyad Alshahrani** | Full-Stack Developer
+**Ziyad Alshahrani** | Software Engineer
 
 I built **Hala Saudi** as my Software Engineering senior project at Prince Sultan University. I was responsible for the full-stack implementation — database schema design, REST API architecture, React frontend, AI itinerary generation engine, authentication system, admin dashboard, testing suite, and deployment configuration.
 
