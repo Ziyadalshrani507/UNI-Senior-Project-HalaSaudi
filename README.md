@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Hala Saudi - AI-Powered Tourism Platform
+
 =======
 # Hala Saudi _  AI-Powered Tourism Platform
 >>>>>>> 5d9d7626721412dacf85f2170e5fac0b009e0f00
